@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    margin-top: 20px;
+}
+/*flex/float combinacija??*/
+.logo img {
+    width: 300px;
+    float: left;
+}
+input {
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: solid rgb(48, 139, 214);
+    padding: 5px;
+}
+
+nav {
+    height: 50px;
+    background-color: rgb(48, 139, 214);
+}
+nav ul {    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li{    
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+    margin-right: -7px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+.dropdown {
+    display: none;
+    background-color: rgb(48, 139, 214);
+}
+ul li:hover ul.dropdown {
+    display: block;
+    position: absolute;
+}
+.sliki {
+    background-color: lightgrey;
+    color: rgb(48, 139, 214);
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 15px;
+    height: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sliki img {
+    width: 150px;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.forma {
+    width: 50%;
+    float: right;
+}
+
+
+
+
+
+.clearfix:before, .clearfix:after 
+{ content: ""; 
+display: table; 
+} 
+.clearfix:after { 
+clear: both; 
+} 
+.clearfix { 
+clear:  both; 
+*zoom: 1; 
+} 
+
